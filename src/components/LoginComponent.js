@@ -44,7 +44,6 @@ export default class LoginComponent extends Component {
                 }
             )
                 .then(response => {
-                    console.log(response)
                     return response['status'] == 200 ? response.json() : response
                 })
                 .then(response => {
